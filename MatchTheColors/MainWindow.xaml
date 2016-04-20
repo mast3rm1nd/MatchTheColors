@@ -1,0 +1,52 @@
+﻿<Window x:Class="MatchTheColors.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MatchTheColors"
+        mc:Ignorable="d"
+        AllowDrop="True"
+        Title="Match the Colors" Height="401.3" Width="918.1" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid>
+        <GroupBox x:Name="groupBox" Header="Your variant" HorizontalAlignment="Left" Margin="455,10,0,0" VerticalAlignment="Top" Height="305" Width="440">
+            <Grid HorizontalAlignment="Left" Height="280" Margin="10,0,-8.8,0" VerticalAlignment="Top" Width="426">
+                <Image x:Name="UserColor" HorizontalAlignment="Left" Height="100" Margin="26,24,-60,0" VerticalAlignment="Top" Width="365"/>
+                <Label x:Name="label" Content="R:" HorizontalAlignment="Left" Margin="26,147,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label_Copy" Content="G:" HorizontalAlignment="Left" Margin="25,176,0,-7" VerticalAlignment="Top" RenderTransformOrigin="0.5,2.077"/>
+                <Label x:Name="label_Copy1" Content="B:" HorizontalAlignment="Left" Margin="26,206,0,-37" VerticalAlignment="Top" RenderTransformOrigin="0.5,2.077"/>
+                <Slider x:Name="Slider_R" HorizontalAlignment="Left" Margin="51,151,0,0" VerticalAlignment="Top" Width="250" Maximum="255" SmallChange="1" LargeChange="5" ValueChanged="Slider_R_ValueChanged" IsSnapToTickEnabled="True"/>
+                <Slider x:Name="Slider_G" HorizontalAlignment="Left" Margin="51,181,0,-4" VerticalAlignment="Top" Width="250" Maximum="255" SmallChange="1" LargeChange="5" IsSnapToTickEnabled="True" ValueChanged="Slider_G_ValueChanged"/>
+                <Slider x:Name="Slider_B" HorizontalAlignment="Left" Margin="51,211,0,-34" VerticalAlignment="Top" Width="250" Maximum="255" SmallChange="1" LargeChange="5" IsSnapToTickEnabled="True" ValueChanged="Slider_B_ValueChanged"/>
+                <TextBox x:Name="TextBox_R_Dec" HorizontalAlignment="Left" Height="23" Margin="311,149,-15,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="35" IsReadOnly="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="TextBox_R_Hex" HorizontalAlignment="Left" Height="23" Margin="356,149,-60,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="35" IsReadOnly="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="TextBox_G_Dec" HorizontalAlignment="Left" Height="23" Margin="311,179,-15,-7" TextWrapping="Wrap" VerticalAlignment="Top" Width="35" IsReadOnly="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="TextBox_G_Hex" HorizontalAlignment="Left" Height="23" Margin="356,179,-60,-7" TextWrapping="Wrap" VerticalAlignment="Top" Width="35" IsReadOnly="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="TextBox_B_Dec" HorizontalAlignment="Left" Height="23" Margin="311,209,-15,-37" TextWrapping="Wrap" VerticalAlignment="Top" Width="35" IsReadOnly="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="TextBox_B_Hex" HorizontalAlignment="Left" Height="23" Margin="356,209,-60,-37" TextWrapping="Wrap" VerticalAlignment="Top" Width="35" IsReadOnly="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <Label x:Name="label_Copy2" Content="Dec" HorizontalAlignment="Left" Margin="311,124,-15,0" VerticalAlignment="Top" Width="35" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Label x:Name="label_Copy3" Content="Hex" HorizontalAlignment="Left" Margin="356,124,-60,0" VerticalAlignment="Top" Width="35" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Label x:Name="label_Copy4" Content="HTML code:" HorizontalAlignment="Left" Margin="25,237,0,-68" VerticalAlignment="Top" Width="75" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <TextBox x:Name="TextBox_HTML_Code" HorizontalAlignment="Left" Height="23" Margin="105,240,0,-68" TextWrapping="Wrap" VerticalAlignment="Top" Width="76" IsReadOnly="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="groupBox1" Header="Guessed color" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="305" Width="440">
+            <Grid HorizontalAlignment="Left" Height="265" Margin="10,10,0,-62.2" VerticalAlignment="Top" Width="405">
+                <Image x:Name="RandomColor" HorizontalAlignment="Left" Height="100" Margin="30,10,0,0" VerticalAlignment="Top" Width="365"/>
+                <TextBox x:Name="TextBox_R_Dec_Random" HorizontalAlignment="Left" Height="23" Margin="316,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="35" IsReadOnly="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="TextBox_R_Hex_Random" HorizontalAlignment="Left" Height="23" Margin="361,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="35" IsReadOnly="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="TextBox_G_Dec_Random" HorizontalAlignment="Left" Height="23" Margin="316,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="35" IsReadOnly="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="TextBox_G_Hex_Random" HorizontalAlignment="Left" Height="23" Margin="361,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="35" IsReadOnly="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="TextBox_B_Dec_Random" HorizontalAlignment="Left" Height="23" Margin="316,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="35" IsReadOnly="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="TextBox_B_Hex_Random" HorizontalAlignment="Left" Height="23" Margin="361,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="35" IsReadOnly="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <Label x:Name="label_Copy5" Content="Dec" HorizontalAlignment="Left" Margin="316,116,0,0" VerticalAlignment="Top" Width="35" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Label x:Name="label_Copy6" Content="Hex" HorizontalAlignment="Left" Margin="361,116,0,0" VerticalAlignment="Top" Width="35" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Label x:Name="label_Copy7" Content="HTML code:" HorizontalAlignment="Left" Margin="30,229,0,0" VerticalAlignment="Top" Width="75" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <TextBox x:Name="TextBox_HTML_Code_Random" HorizontalAlignment="Left" Height="23" Margin="110,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76" IsReadOnly="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <Label x:Name="TotalError_Label" Content="Total error = 0" Margin="244,229,9,0" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+            </Grid>
+        </GroupBox>
+        <Button x:Name="Answer_button" Content="Seems fine to me" HorizontalAlignment="Left" Margin="455,320,0,0" VerticalAlignment="Top" Width="440" Height="30" Click="Answer_button_Click"/>
+        <Button x:Name="NextRandomColor_button" Content="Next random color" HorizontalAlignment="Left" Margin="10,320,0,0" VerticalAlignment="Top" Width="440" Height="30" Click="NextRandomColor_button_Click"/>
+
+    </Grid>
+</Window>

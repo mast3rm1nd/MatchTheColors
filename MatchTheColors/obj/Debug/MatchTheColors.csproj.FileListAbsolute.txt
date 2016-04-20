@@ -1,0 +1,14 @@
+C:\Users\Администратор\Dropbox\!Coding\All_in_one\MatchTheColors\MatchTheColors\bin\Debug\MatchTheColors.exe.config
+C:\Users\Администратор\Dropbox\!Coding\All_in_one\MatchTheColors\MatchTheColors\obj\Debug\MatchTheColors.csprojResolveAssemblyReference.cache
+C:\Users\Администратор\Dropbox\!Coding\All_in_one\MatchTheColors\MatchTheColors\obj\Debug\MainWindow.g.cs
+C:\Users\Администратор\Dropbox\!Coding\All_in_one\MatchTheColors\MatchTheColors\obj\Debug\App.g.cs
+C:\Users\Администратор\Dropbox\!Coding\All_in_one\MatchTheColors\MatchTheColors\obj\Debug\MatchTheColors_MarkupCompile.cache
+C:\Users\Администратор\Dropbox\!Coding\All_in_one\MatchTheColors\MatchTheColors\obj\Debug\MatchTheColors_MarkupCompile.lref
+C:\Users\Администратор\Dropbox\!Coding\All_in_one\MatchTheColors\MatchTheColors\bin\Debug\MatchTheColors.exe
+C:\Users\Администратор\Dropbox\!Coding\All_in_one\MatchTheColors\MatchTheColors\bin\Debug\MatchTheColors.pdb
+C:\Users\Администратор\Dropbox\!Coding\All_in_one\MatchTheColors\MatchTheColors\obj\Debug\MainWindow.baml
+C:\Users\Администратор\Dropbox\!Coding\All_in_one\MatchTheColors\MatchTheColors\obj\Debug\MatchTheColors.g.resources
+C:\Users\Администратор\Dropbox\!Coding\All_in_one\MatchTheColors\MatchTheColors\obj\Debug\MatchTheColors.Properties.Resources.resources
+C:\Users\Администратор\Dropbox\!Coding\All_in_one\MatchTheColors\MatchTheColors\obj\Debug\MatchTheColors.csproj.GenerateResource.Cache
+C:\Users\Администратор\Dropbox\!Coding\All_in_one\MatchTheColors\MatchTheColors\obj\Debug\MatchTheColors.exe
+C:\Users\Администратор\Dropbox\!Coding\All_in_one\MatchTheColors\MatchTheColors\obj\Debug\MatchTheColors.pdb
